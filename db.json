@@ -40,14 +40,14 @@
       "title": "Pay Phone Bill",
       "description": "Phone bill must be paid by the first of the month",
       "dueDate": "2025-02-01",
-      "completed": false
+      "completed": true
     },
     {
       "id": "7",
       "title": "Buy Paint",
       "description": "Buy paint for downstairs bathroom that needs to be repainted.",
       "dueDate": "2025-02-05",
-      "completed": false
+      "completed": true
     },
     {
       "id": "8",
@@ -55,6 +55,13 @@
       "description": "Buy more dog food, whimzees and chew toys.",
       "dueDate": "2025-01-25",
       "completed": true
+    },
+    {
+      "id": "21fe",
+      "title": "Go on a run",
+      "description": "5k",
+      "dueDate": "2025-01-29",
+      "completed": false
     }
   ]
 }

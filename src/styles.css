@@ -1,24 +1,9 @@
-body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: white;
-  color: #333;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  height: 100vh;
-  flex-direction: column;
-}
-
 h1 {
   font-size: 2.5rem;
   color: pink;
-  margin-bottom: 20px;
   text-align: center;
   font-weight: bold;
 }
-
 
 .page-title {
   font-size: 2.5rem; 
@@ -27,7 +12,6 @@ h1 {
   margin-top: 40px; 
   font-weight: bold; 
 }
-
 
 nav {
   margin-bottom: 20px;
@@ -74,17 +58,20 @@ a:hover {
 
 .task-list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); 
+  grid-template-columns: repeat(4, 1fr); 
   gap: 20px;
   padding: 20px;
 }
 
 .task-card {
+  width: 200px;
+  height: 300px;
+  margin-top: 5px;
   background-color: #f8bbd0; 
   border: 1px solid #e91e63; 
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 15px;  
+  padding: 5px;  
   text-align: center;
   transition: transform 0.3s ease;
 }
@@ -111,69 +98,16 @@ a:hover {
 
 button {
   background-color: yellow;
-  color: orange;
-  font-weight: bold;
+  color: rgba(255, 0, 85, 0.422);
+  font-weight: bolder;
   padding: 10px 15px;
   border-radius: 5px;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  align-content:flex-end;
 }
 
-button:hover {
-  background-color: #ff9800;
-}
 
-.add-task-form {
-  width: 90%; 
-  max-width: 400px; 
-  margin: 20px auto; 
-  padding: 20px;
-  background-color: #f8bbd0; 
-  border: 1px solid #e91e63; 
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
 
-.add-task-form label {
-  font-size: 1rem;
-  color: #333;
-}
-
-.add-task-form input,
-.add-task-form textarea {
-  padding: 10px;
-  border: 1px solid #e91e63;
-  border-radius: 5px;
-  font-size: 1rem;
-}
-
-.add-task-form input[type="date"] {
-  padding: 8px;
-  font-size: 1rem;
-}
-
-.add-task-form button {
-  background-color: #ffeb3b; 
-  color: #e91e63; 
-  border: none;
-  padding: 12px 20px;
-  font-size: 1.2rem;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.add-task-form button:hover {
-  background-color: #fbc02d; 
-}
-
-.add-task-form button:disabled {
-  background-color: #ddd;
-  cursor: not-allowed;
-}
 
