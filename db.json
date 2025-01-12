@@ -5,21 +5,21 @@
       "title": "Buy groceries",
       "description": "Get milk, eggs, and bread.",
       "dueDate": "2025-01-25",
-      "completed": true
+      "completed": false
     },
     {
       "id": "2",
       "title": "Call Doctor",
       "description": "Make apt for medication refill.",
       "dueDate": "2025-01-27",
-      "completed": true
+      "completed": false
     },
     {
       "id": "3",
       "title": "Mail Package",
       "description": "Send out friend's birthday gift",
       "dueDate": "2025-02-01",
-      "completed": true
+      "completed": false
     },
     {
       "id": "4",

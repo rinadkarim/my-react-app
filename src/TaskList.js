@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import TaskCard from "./TaskCard";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const TaskList = () => {
   const { filter } = useParams();
@@ -11,7 +11,8 @@ const TaskList = () => {
       .then((response) => response.json())
       .then((data) => {
         setTasks(data);
-      });
+      })
+      .catch((err) => console.error("Error fetching tasks:", err));
   }, []);
 
   const filteredTasks = tasks.filter((task) => {
@@ -25,27 +26,31 @@ const TaskList = () => {
       task.id === taskId ? { ...task, completed: !task.completed } : task
     );
     setTasks(updatedTasks);
+
+    const taskToUpdate = tasks.find((task) => task.id === taskId);
     fetch(`http://localhost:5000/tasks/${taskId}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ completed: !tasks.completed }),
-    });
+      body: JSON.stringify({ completed: !taskToUpdate.completed }),
+    })
+      .then((response) => response.json())
+      .catch((err) => console.error("Error updating task:", err));
   };
 
   return (
     <div>
       <div className="nav-buttons">
-        <button>
-          <a href="/tasks/all">All</a>
-        </button>
-        <button>
-          <a href="/tasks/completed">Completed</a>
-        </button>
-        <button>
-          <a href="/tasks/pending">Pending</a>
-        </button>
+        <Link to="/tasks/all">
+          <button>All</button>
+        </Link>
+        <Link to="/tasks/completed">
+          <button>Completed</button>
+        </Link>
+        <Link to="/tasks/pending">
+          <button>Pending</button>
+        </Link>
       </div>
 
       <div className="task-list">
@@ -62,6 +67,7 @@ const TaskList = () => {
 };
 
 export default TaskList;
+
 
 
 
