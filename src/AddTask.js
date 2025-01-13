@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const AddTask = () => {
+const AddTask = ({ addTask }) => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [dueDate, setDueDate] = useState("");
@@ -24,10 +24,12 @@ const AddTask = () => {
     })
       .then((response) => response.json())
       .then((data) => {
+        addTask(data);
         setTitle("");
         setDescription("");
         setDueDate("");
-      });
+      })
+      .catch((err) => console.error("Error adding task:", err));
   };
 
   return (
@@ -64,5 +66,7 @@ const AddTask = () => {
 };
 
 export default AddTask;
+
+
 
 

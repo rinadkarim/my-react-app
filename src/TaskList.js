@@ -1,19 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import TaskCard from "./TaskCard";
 import { Link, useParams } from "react-router-dom";
 
-const TaskList = () => {
+const TaskList = ({ tasks }) => {
   const { filter } = useParams();
-  const [tasks, setTasks] = useState([]);
-
-  useEffect(() => {
-    fetch("http://localhost:5000/tasks")
-      .then((response) => response.json())
-      .then((data) => {
-        setTasks(data);
-      })
-      .catch((err) => console.error("Error fetching tasks:", err));
-  }, []);
 
   const filteredTasks = tasks.filter((task) => {
     if (filter === "completed") return task.completed;
@@ -25,7 +15,6 @@ const TaskList = () => {
     const updatedTasks = tasks.map((task) =>
       task.id === taskId ? { ...task, completed: !task.completed } : task
     );
-    setTasks(updatedTasks);
 
     const taskToUpdate = tasks.find((task) => task.id === taskId);
     fetch(`http://localhost:5000/tasks/${taskId}`, {
@@ -67,6 +56,7 @@ const TaskList = () => {
 };
 
 export default TaskList;
+
 
 
 
