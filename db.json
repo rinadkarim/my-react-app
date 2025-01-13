@@ -47,7 +47,7 @@
       "title": "Buy Paint",
       "description": "Buy paint for downstairs bathroom that needs to be repainted.",
       "dueDate": "2025-02-05",
-      "completed": false
+      "completed": true
     },
     {
       "id": "8",
@@ -61,6 +61,13 @@
       "title": "Go on a run",
       "description": "5k",
       "dueDate": "2025-01-29",
+      "completed": true
+    },
+    {
+      "id": "be0a",
+      "title": "run",
+      "description": "go run",
+      "dueDate": "2025-01-15",
       "completed": true
     }
   ]
