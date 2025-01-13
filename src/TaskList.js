@@ -49,7 +49,7 @@ const TaskList = () => {
           <button>Completed</button>
         </Link>
         <Link to="/tasks/pending">
-          <button>Pending</button>
+          <button>To Do</button>
         </Link>
       </div>
 

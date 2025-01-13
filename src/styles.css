@@ -27,7 +27,7 @@ ul {
 
 button {
   background-color: pink;
-  color: white;
+  color: rgb(253, 253, 253);
   padding: 10px 15px;
   border: 1px solid pink;
   border-radius: 5px;
@@ -39,7 +39,7 @@ button {
 }
 
 button:hover {
-  background-color: #e91e63;
+  background-color: #ff4e0364;
 }
 
 button:disabled {

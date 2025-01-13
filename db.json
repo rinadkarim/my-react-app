@@ -5,14 +5,14 @@
       "title": "Buy groceries",
       "description": "Get milk, eggs, and bread.",
       "dueDate": "2025-01-25",
-      "completed": false
+      "completed": true
     },
     {
       "id": "2",
       "title": "Call Doctor",
       "description": "Make apt for medication refill.",
       "dueDate": "2025-01-27",
-      "completed": false
+      "completed": true
     },
     {
       "id": "3",
@@ -26,7 +26,7 @@
       "title": "Chores",
       "description": "Clean room, kitchen and bathroom.",
       "dueDate": "2025-01-20",
-      "completed": true
+      "completed": false
     },
     {
       "id": "5",
@@ -47,21 +47,21 @@
       "title": "Buy Paint",
       "description": "Buy paint for downstairs bathroom that needs to be repainted.",
       "dueDate": "2025-02-05",
-      "completed": true
+      "completed": false
     },
     {
       "id": "8",
       "title": "Go to Petco",
       "description": "Buy more dog food, whimzees and chew toys.",
       "dueDate": "2025-01-25",
-      "completed": true
+      "completed": false
     },
     {
       "id": "21fe",
       "title": "Go on a run",
       "description": "5k",
       "dueDate": "2025-01-29",
-      "completed": false
+      "completed": true
     }
   ]
 }
