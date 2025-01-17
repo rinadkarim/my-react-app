@@ -1,78 +1,8 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# my-react-app
-
-my-react-app
+Tasker
 Description:
-my-react-app is a React-based task management application that allows users to efficiently manage tasks by categorizing them as being in the “Completed" category or in the  “To Do” category. A user can easily navigate from one category to the other through a navigation bar that is found at the top of the page. There a user can find “All Tasks”, “Completed Tasks”, “To Do” and “Add Task”, a feature that lets users add more tasks to their list of tasks if they wish to do so. The application provides a user-friendly interface to add new tasks, view tasks in different categories, and toggle their completion status. Tasks are displayed in a card layout, making it easy to see the title, description, completion status and due date for each task. Each card has a toggle button near the bottom that lets the user either mark the task as “Complete” or “Needs Completing”. This will not only update the written status on the card but it will also move the card to its new designated category page. Newly added tasks will immediately appear in their appropriate category on the "All Tasks" page as a new card.
+Tasker is a React-based task management application that allows users to efficiently manage tasks by categorizing them as being in the “Completed" category or in the  “To Do” category. A user can easily navigate from one category to the other through a navigation bar that is found at the top of the page. There a user can find “All Tasks”, “Completed Tasks”, “To Do” and “Add Task”, a feature that lets users add more tasks to their list of tasks if they wish to do so. The application provides a user-friendly interface to add new tasks, view tasks in different categories, and toggle their completion status. Tasks are displayed in a card layout, making it easy to see the title, description, completion status and due date for each task. Each card has a toggle button near the bottom that lets the user either mark the task as “Complete” or “Needs Completing”. This will not only update the written status on the card but it will also move the card to its new designated category page. Newly added tasks will immediately appear in their appropriate category on the "All Tasks" page as a new card.
 Features:
 	•	Task Categorization: View tasks categorized into "All", "Completed", and “To “Do”.
 	•	Task Cards: Each task is displayed in a visually appealing card that shows the task's title, description, status and due date.
@@ -126,7 +56,7 @@ The app's layout is organized using a grid layout, where tasks are displayed as 
 	•	A button that allows users to toggle the task's status (from “Needs Completing" to "Completed" or vice versa).
 The cards are visually distinct, with a pink theme, and the app is designed to be responsive, adapting to different screen sizes.
 
-Contributing
+
 
 Contributions to this project are welcome! To get started, please follow these steps:
 
