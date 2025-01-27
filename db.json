@@ -55,27 +55,6 @@
       "description": "Buy more dog food, whimzees and chew toys.",
       "dueDate": "2025-01-25",
       "completed": false
-    },
-    {
-      "id": "21fe",
-      "title": "Go on a run",
-      "description": "5k",
-      "dueDate": "2025-01-29",
-      "completed": true
-    },
-    {
-      "id": "be0a",
-      "title": "run",
-      "description": "go run",
-      "dueDate": "2025-01-15",
-      "completed": true
-    },
-    {
-      "id": "f79b",
-      "title": "apt",
-      "description": "hair apt",
-      "dueDate": "2025-01-08",
-      "completed": false
     }
   ]
 }
