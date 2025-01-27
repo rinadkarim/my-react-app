@@ -11,7 +11,7 @@ const TaskCard = ({ task, onToggleComplete }) => {
       </div>
       <div className="task-actions">
         <button onClick={() => onToggleComplete(task.id)}>
-          {task.completed ? 'Needs Completing' : 'Complete'}
+          {task.completed ? 'Done' : 'Complete'}
         </button>
       </div>
     </div>

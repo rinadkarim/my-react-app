@@ -8,7 +8,7 @@ function NavBar() {
           <ul>
             <li><Link to="/tasks/all"><button>All Tasks</button></Link></li>
             <li><Link to="/tasks/completed"><button>Completed Tasks</button></Link></li>
-            <li><Link to="/tasks/pending"><button>To Do</button></Link></li>
+            <li><Link to="/tasks/todo"><button>To Do</button></Link></li>
             <li><Link to="/add-task"><button>Add Task</button></Link></li>
            </ul>
         </nav>

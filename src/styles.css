@@ -14,9 +14,11 @@ h1 {
 }
 
 nav {
-  margin-bottom: 20px;
+  margin-bottom: 100px;
   text-align: center;
 }
+
+
 
 ul {
   list-style-type: none;
@@ -39,6 +41,7 @@ nav button {
   font-size: 1rem;
   transition: background-color 0.3s ease;
   font-weight: bold;
+  
 }
 
 nav button:hover {

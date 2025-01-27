@@ -1,13 +1,13 @@
 import React from "react";
-import TaskCard from "./TaskCard";
 import { Link, useParams } from "react-router-dom";
+import TaskCard from "./TaskCard";
 
 const TaskList = ({ tasks }) => {
   const { filter } = useParams();
 
   const filteredTasks = tasks.filter((task) => {
     if (filter === "completed") return task.completed;
-    if (filter === "pending") return !task.completed;
+    if (filter === "todo") return !task.completed;
     return true;
   });
 
@@ -30,17 +30,7 @@ const TaskList = ({ tasks }) => {
 
   return (
     <div>
-      <div className="nav-buttons">
-        <Link to="/tasks/all">
-          <button>All</button>
-        </Link>
-        <Link to="/tasks/completed">
-          <button>Completed</button>
-        </Link>
-        <Link to="/tasks/pending">
-          <button>To Do</button>
-        </Link>
-      </div>
+    
 
       <div className="task-list">
         {filteredTasks.map((task) => (

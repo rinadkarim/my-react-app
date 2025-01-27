@@ -18,7 +18,7 @@ const TaskDetails = () => {
       <h2>{task.title}</h2>
       <p>{task.description}</p>
       <p>Due Date: {task.dueDate}</p>
-      <p>Status: {task.completed ? "Completed" : "Pending"}</p>
+      <p>Status: {task.completed ? "Completed" : "To Do"}</p>
     </div>
   );
 };
