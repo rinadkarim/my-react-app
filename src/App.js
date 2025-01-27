@@ -25,11 +25,11 @@ function App() {
       <h1 className="page-title">Task Management App</h1>
       <NavBar />
       <Routes>
-        <Route path="/tasks/:filter" element={<TaskList tasks={tasks} />} />
+        <Route path="/tasks/:filter" element={<TaskList setTasks={setTasks} tasks={tasks} />} />
         <Route path="/tasks/:id" element={<TaskDetails />} />
         <Route path="/add-task" element={<AddTask addTask={addTask} />} />
       </Routes>
-    </Router>
+   </Router>
   );
 }
 

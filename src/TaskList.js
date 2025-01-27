@@ -2,7 +2,7 @@ import React from "react";
 import { Link, useParams } from "react-router-dom";
 import TaskCard from "./TaskCard";
 
-const TaskList = ({ tasks }) => {
+const TaskList = ({ tasks, setTasks }) => {
   const { filter } = useParams();
 
   const filteredTasks = tasks.filter((task) => {
@@ -15,6 +15,8 @@ const TaskList = ({ tasks }) => {
     const updatedTasks = tasks.map((task) =>
       task.id === taskId ? { ...task, completed: !task.completed } : task
     );
+
+    setTasks(updatedTasks)
 
     const taskToUpdate = tasks.find((task) => task.id === taskId);
     fetch(`http://localhost:5000/tasks/${taskId}`, {
